@@ -1,35 +1,67 @@
 ---
-title: ":ramen: Indigo, minimalist jekyll theme"
+title: "超快地球物理坐标的数据库服务器"
 layout: post
-date: 2016-01-23 22:10
-tag: jekyll
-image: https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png
+date: 2019-04-1 23:10
+tag: GoogleS2
+image: 
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
 description: "This is a simple and minimalist template for Jekyll for those who likes to eat noodles."
 category: project
-author: johndoe
+author: H!Guo
 externalLink: false
 ---
 
-![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)
+# 介绍
 
-Example of project - Indigo Minimalist Jekyll Template - [Demo](http://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles.
+earth-server是一个基于谷歌S2类库实现的，地球经纬度算法数据库。目前支持如下功能：
 
----
+1. 向数据库中增加、删除对象
+2. 搜索指定位置最近的若干个坐标标识。
+3. 以守护进程方式启动
 
-What has inside?
+# 编译
 
-- Gulp
-- BrowserSync
-- Stylus
-- SVG
-- Travis
-- No JS
-- [98/100](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F)
+~~~
+git clone https://github.com/guohai163/earth-server.git
+cd earth-library
+mkdir build
+cd build
+cmake ..
+make
+./earth-library
+~~~
 
----
+# 命令
+* add 存储一个新坐标点
 
-[Check it out](http://sergiokopplin.github.io/indigo/) here.
-If you need some help, just [tell me](http://github.com/sergiokopplin/indigo/issues).
+~~~ html
+    add <key> <Latitude> <Longitude>\r\n
+~~~
+
+* get 搜索某一位置最近N个节点
+
+~~~ html
+    get <Latitude> <Longitude> <queryNumber>\r\n
+~~~
+    
+* delete 删除一个坐标点
+
+~~~ html
+    delete <key> <Latitude> <Longitude>\r\n
+~~~
+
+* search 搜索某一位置周边指定秘书的结果集
+
+~~~ html
+    search <Latitude> <Longitude> <queryMeter>\r\n
+~~~
+
+# 参考
+* [Beej's Guide to Network Programming](http://beej.us/guide/bgnet/)
+* [Unix Network Programming](http://www.unpbook.com/)
+* [S2Geometry](http://s2geometry.io/)
+* [libevent](http://libevent.org/)
+
+
