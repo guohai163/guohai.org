@@ -1,3 +1,4 @@
+encoding: utf-8
 # main text of home
 name: Hai
 bio: 一个喜欢旅行的程序员
@@ -16,7 +17,7 @@ resume: false
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: guohai.org
+url: https://guohai.org
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
