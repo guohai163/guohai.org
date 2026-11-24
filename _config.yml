@@ -26,7 +26,7 @@ gist:
 
 adsense:
   enabled: false
-  publisher_id: ''
+  publisher_id: 'ca-pub-1075787032218290'
   slots:
     home_in_feed: ''
     article_end: ''

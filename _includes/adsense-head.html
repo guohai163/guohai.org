@@ -1,0 +1,6 @@
+{%- assign publisher = site.adsense.publisher_id | default: '' | strip -%}
+{%- if jekyll.environment == 'production' and publisher != '' %}
+<meta name="google-adsense-account" content="{{ publisher | escape }}">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ publisher | uri_escape }}"
+        crossorigin="anonymous"></script>
+{%- endif -%}
