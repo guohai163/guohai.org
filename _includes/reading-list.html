@@ -1,4 +1,4 @@
-<ul class="reading-list">
+<ul class="reading-list{% if include.cards %} reading-cards{% endif %}">
   {% for entry in include.entries %}
   {% assign topic = site.data.topics | where: 'id', entry.topic | first %}
   {% assign prefix = entry.url | slice: 0, 1 %}

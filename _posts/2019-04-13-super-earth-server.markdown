@@ -1,6 +1,7 @@
 ---
 title: "超快地球物理坐标的数据库服务器"
 layout: post
+ad_slot: article_end
 date: 2019-04-1 23:10
 tag: GoogleS2
 image: 

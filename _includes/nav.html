@@ -10,5 +10,13 @@
       <a href="{{ '/projects/' | relative_url }}"{% if page.url == '/projects/' %} aria-current="page"{% endif %}>项目</a>
       <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>关于</a>
     </nav>
+    <label class="theme-picker" hidden>
+      <span class="theme-label">主题</span>
+      <select id="color-theme" aria-label="颜色主题">
+        <option value="system">跟随系统</option>
+        <option value="light">浅色</option>
+        <option value="dark">深色</option>
+      </select>
+    </label>
   </div>
 </header>

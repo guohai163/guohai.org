@@ -64,3 +64,7 @@ Check the [FAQ](./FAQ.md) if you have any doubt or problem.
 ---
 
 [MIT](http://kopplin.mit-license.org/) License © Sérgio Kopplin
+
+### AdSense 广告位
+
+新版预留了首页精选文章区下方的 \`home_in_feed\`，以及专题和 Earth Server 正文下方的 \`article_end\`。站点获准投放后，在 \`_config.yml\` 的 \`adsense\` 中填写自己的 \`publisher_id\`（\`ca-pub-…\`）和对应的响应式展示广告单元 ID，并将 \`enabled\` 设为 \`true\`。发布前同步更新隐私说明及适用的同意设置。缺少广告单元 ID 的位置不会渲染，仅生产构建会输出广告代码。

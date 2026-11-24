@@ -1,0 +1,14 @@
+{%- assign publisher = site.adsense.publisher_id | default: '' | strip -%}
+{%- assign slot_id = site.adsense.slots[include.placement] | default: '' | strip -%}
+{%- if jekyll.environment == 'production' and site.adsense.enabled == true and publisher != '' and slot_id != '' -%}
+<aside class="ad-placement" aria-label="广告">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="{{ publisher | escape }}"
+       data-ad-slot="{{ slot_id | escape }}"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+</aside>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ publisher | uri_escape }}" crossorigin="anonymous"></script>
+<script>(window.adsbygoogle = window.adsbygoogle || []).push({});</script>
+{%- endif -%}

@@ -27,6 +27,7 @@
   date: '2022-03-15'
   topic: infrastructure
   url: https://blog.guohai.org/develop/2022/03/15/kubernetes-springboot-configmap.html
+  home: true
 - title: 地理坐标查询服务 Earth Server
   description: 基于 Google S2 和 libevent 的经纬度查询服务，附编译步骤与命令示例。
   date: '2019-04-01'

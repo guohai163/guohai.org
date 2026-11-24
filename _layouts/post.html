@@ -17,6 +17,7 @@ layout: default
     {% endfor %}
   </p>
   {% endif %}
+  {% if page.ad_slot %}{% include adsense-slot.html placement=page.ad_slot %}{% endif %}
   {% if site.disqus.categories contains page.category %}
     {% include disqus.html %}
   {% endif %}

@@ -10,4 +10,5 @@ layout: default
   <div class="prose">
     {{ content }}
   </div>
+  {% if page.ad_slot %}{% include adsense-slot.html placement=page.ad_slot %}{% endif %}
 </article>

@@ -23,3 +23,10 @@ exclude: ["travis.sh", "Rakefile", "README.md", "Gemfile", "Gemfile.lock", "FAQ.
 
 gist:
   noscript: false
+
+adsense:
+  enabled: false
+  publisher_id: ''
+  slots:
+    home_in_feed: ''
+    article_end: ''

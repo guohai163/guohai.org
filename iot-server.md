@@ -3,6 +3,7 @@ title: 物联网服务端设计
 kicker: 后端开发 · 连载专题
 description: 从设备建立连接，到会话管理、重构和性能测试的五篇实战笔记。
 layout: page
+ad_slot: article_end
 permalink: /iot-server/
 ---
 
