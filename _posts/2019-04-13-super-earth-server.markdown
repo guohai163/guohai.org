@@ -7,7 +7,7 @@ image:
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
-description: "This is a simple and minimalist template for Jekyll for those who likes to eat noodles."
+description: "基于 Google S2 和 libevent 的地理坐标查询服务，附编译步骤与命令示例。"
 category: project
 author: H!Guo
 externalLink: false

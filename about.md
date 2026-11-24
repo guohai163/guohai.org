@@ -1,31 +1,14 @@
 ---
-title: About
+title: 关于
 layout: page
+permalink: /about/
+description: 我是 Hai，一个喜欢旅行的程序员。
 ---
-![Profile Image]({{ site.url }}/{{ site.picture }})
 
-<p>我就是我.</p>
+这里整理我写过的技术笔记，包括物联网服务端、Kubernetes 运维和键盘改造。工程项目和源码也可以在 [GitHub](https://github.com/guohai163) 找到。
 
+过去参与过光宇游戏平台和奇宝斋的开发。
 
+## 联系
 
-<h2>Skills</h2>
-
-<ul class="skill-list">
-	<li>C# .Net</li>
-	<li>Java Web</li>
-	<li>Perl</li>
-	<li>Javascript (simple)</li>
-	<li>NodeJS</li>
-	<li>Git</li>
-	<li>PHP</li>
-	<li>Python</li>
-	<li>MySQL - SqlServer</li>
-	<li>C/C++</li>
-</ul>
-
-<h2>Projects</h2>
-
-<ul>
-	<li><a href="http://www.gyyx.cn/">光宇游戏平台</a> 一个为客户端游戏服务的大型网站</li>
-	<li><a href="http://qibao.gyyx.cn/">奇宝斋</a> 一个基于.Net语言的虚拟道具交易平台</li>
-</ul>
+如果发现文章中的错误、失效链接，或想交流实现细节，欢迎发邮件到 [guohai@gmail.com](mailto:guohai@gmail.com)。

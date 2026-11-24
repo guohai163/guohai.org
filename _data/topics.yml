@@ -1,0 +1,9 @@
+- id: backend
+  name: 后端开发
+  description: 设备接入、长连接与性能测试
+- id: infrastructure
+  name: 基础设施
+  description: Kubernetes、配置管理与 JVM 诊断
+- id: hardware
+  name: 硬件折腾
+  description: 键盘改造与动手实验

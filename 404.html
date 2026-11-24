@@ -1,14 +1,8 @@
 ---
-layout: default
-permalink: /404.html 
+layout: page
+title: 找不到这个页面
+permalink: /404.html
+sitemap: false
 ---
-
-<section class="lost-container">
-  <h1>Uh oh!</h1>
-  <div class="link">
-    <img class="selfie" alt="{{ site.name }}" src="{{ site.url }}/assets/images/error.gif" />
-  </div>
-  <br />
-  <br />
-  <a href="/">Take me home!</a>
-</section>
+<p>这个地址已经移动或不存在。</p>
+<p><a href="{{ '/' | relative_url }}">回到首页</a> · <a href="{{ '/blog/' | relative_url }}">查找文章</a></p>

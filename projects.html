@@ -1,16 +1,12 @@
 ---
 layout: page
-title: Projects
+title: 项目
+permalink: /projects/
+description: 个人开发项目与源码。
 ---
-<section class="list">
-    {% for post in site.posts %}
-        {% if post.projects %}
-            <div class="item {% if post.star %}star{% endif %}">
-                <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
-                    <aside><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
-                    <h3 class="title">{{ post.title }}</h3>
-                </a>
-            </div>
-        {% endif %}
-    {% endfor %}
-</section>
+<h2>Earth Server</h2>
+<p>基于 Google S2 和 libevent 的地理坐标查询服务，支持增删坐标对象以及按给定坐标搜索附近对象。</p>
+<ul>
+  <li><a href="{{ '/super-earth-server/' | relative_url }}">项目说明与编译示例</a></li>
+  <li><a href="https://github.com/{{ site.github }}/earth-server">GitHub 源码</a></li>
+</ul>

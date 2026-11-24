@@ -1,0 +1,23 @@
+<ul class="reading-list">
+  {% for entry in include.entries %}
+  {% assign topic = site.data.topics | where: 'id', entry.topic | first %}
+  {% assign prefix = entry.url | slice: 0, 1 %}
+  {% if prefix == '/' %}
+    {% assign entry_url = entry.url | relative_url %}
+    {% assign arrow = '→' %}
+  {% else %}
+    {% assign entry_url = entry.url %}
+    {% assign arrow = '↗' %}
+  {% endif %}
+  <li>
+    <a class="reading-row" href="{{ entry_url }}">
+      <div>
+        <p class="row-meta"><span>{{ topic.name }}</span><time datetime="{{ entry.date | date: '%Y-%m-%d' }}">{{ entry.date | date: '%Y.%m.%d' }}</time></p>
+        <h3>{{ entry.title }}</h3>
+        <p class="row-description">{{ entry.description }}</p>
+      </div>
+      <span class="row-arrow" aria-hidden="true">{{ arrow }}</span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

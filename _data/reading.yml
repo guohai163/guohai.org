@@ -1,0 +1,35 @@
+- title: 物联网服务端设计
+  description: 从设备接入到性能测试的五篇实战笔记。
+  date: '2022-07-15'
+  topic: backend
+  url: /iot-server/
+  featured: true
+- title: HHKB 老键盘双模改造
+  description: 给老款 HHKB 增加蓝牙，同时保留有线连接。
+  date: '2022-08-09'
+  topic: hardware
+  url: https://blog.guohai.org/hardware/2022/08/09/hhkb-bt-line.html
+  home: true
+- title: Kubernetes 证书过期的处理
+  description: 确认证书有效期，处理集群证书过期。
+  date: '2022-06-21'
+  topic: infrastructure
+  url: https://blog.guohai.org/develop/2022/06/21/k8s-cert-renew.html
+  home: true
+- title: 在 Kubernetes 中采集 JVM 数据
+  description: 汇总容器里查看 JVM 运行状态与采集诊断数据的办法。
+  date: '2022-04-28'
+  topic: infrastructure
+  url: https://blog.guohai.org/develop/2022/04/28/kubernetes-jvm-export.html
+  home: true
+- title: Spring Boot 在 Kubernetes 中使用 ConfigMap
+  description: 从应用配置文件到集群挂载，梳理 ConfigMap 的接入过程。
+  date: '2022-03-15'
+  topic: infrastructure
+  url: https://blog.guohai.org/develop/2022/03/15/kubernetes-springboot-configmap.html
+- title: 地理坐标查询服务 Earth Server
+  description: 基于 Google S2 和 libevent 的经纬度查询服务，附编译步骤与命令示例。
+  date: '2019-04-01'
+  topic: backend
+  url: /super-earth-server/
+  home: true

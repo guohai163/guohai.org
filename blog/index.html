@@ -1,29 +1,30 @@
 ---
-# blog page must be named index.html and in its own folder to support pagination
-# https://jekyllrb.com/docs/pagination/
-layout: page
-title: Blog
+layout: default
+title: 文章
+description: 后端开发、基础设施与硬件折腾的文章索引。
 ---
-<section class="list">
-	{% if site.posts.size == 0 %}
-		<p class="text-center">Nothing published yet!</p>
-	{% elsif site.paginate %}
-		{% for post in paginator.posts %}
-			{% if post.category == 'blog' %}
-				{% if post.hidden != true %}
-					{% include blog-post.html %}
-				{% endif %}
-			{% endif %}
-		{% endfor %}
+<section class="archive">
+  <header class="reading-header">
+    <h1>{{ page.title }}</h1>
+    <p class="lede">{{ page.description }}</p>
+  </header>
+  <nav class="tag-links" aria-label="跳转到主题">
+    {% for topic in site.data.topics %}
+    <a href="#{{ topic.id }}">{{ topic.name }}</a>
+    {% endfor %}
+  </nav>
 
-		{% include pagination.html%}
-	{% else %}
-		{% for post in site.posts %}
-			{% if post.category == 'blog' %}
-				{% if post.hidden != true %}
-					{% include blog-post.html %}
-				{% endif %}
-			{% endif %}
-		{% endfor %}
-	{% endif %}
+  {% for topic in site.data.topics %}
+  <section id="{{ topic.id }}" class="archive-topic" aria-labelledby="{{ topic.id }}-title">
+    <h2 id="{{ topic.id }}-title">{{ topic.name }}</h2>
+    <p>{{ topic.description }}</p>
+    {% assign entries = site.data.reading | where: 'topic', topic.id %}
+    {% include reading-list.html entries=entries %}
+  </section>
+  {% endfor %}
+
+  <div class="archive-links">
+    <a class="text-link" href="https://blog.guohai.org/">历史文章归档 <span aria-hidden="true">↗</span></a>
+    <a class="text-link" href="{{ '/tags/' | relative_url }}">旧站标签 <span aria-hidden="true">→</span></a>
+  </div>
 </section>
