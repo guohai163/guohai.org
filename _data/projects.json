@@ -1,0 +1,66 @@
+[
+  {
+    "name": "java-sql-web",
+    "description": "面向生产环境的 Web 数据库查询平台，支持 MySQL 和 SQL Server，提供 OTP 二次验证与 SQL 查询审计。",
+    "url": "https://github.com/guohai163/java-sql-web",
+    "stars": 23,
+    "forks": 11,
+    "updated_at": "2026-09-08T05:38:45Z"
+  },
+  {
+    "name": "openai-gateway",
+    "description": "基于 Go 和 PostgreSQL 的 OpenAI 兼容网关，集中管理上游模型、访问密钥和调用成本。",
+    "url": "https://github.com/guohai163/openai-gateway",
+    "stars": 0,
+    "forks": 0,
+    "updated_at": "2026-11-12T16:20:40Z"
+  },
+  {
+    "name": "earth-server",
+    "description": "基于 Google S2 的地理坐标查询服务，支持添加和删除坐标对象，以及查找指定位置附近的对象。",
+    "url": "https://github.com/guohai163/earth-server",
+    "stars": 16,
+    "forks": 6,
+    "updated_at": "2025-10-10T04:16:05Z"
+  },
+  {
+    "name": "jdoka",
+    "description": "通过邮件自动处理运营数据查询，按预设规则执行 SQL 并回复结果，支持带参数的查询和发件人白名单。",
+    "url": "https://github.com/guohai163/jdoka",
+    "stars": 6,
+    "forks": 4,
+    "updated_at": "2026-09-15T02:58:44Z"
+  },
+  {
+    "name": "esim-switchboard",
+    "description": "在 macOS 上通过 ADB 管理 USB 连接的 Android 手机，在 Web 控制台切换 eSIM、查看短信和回放操作。",
+    "url": "https://github.com/guohai163/esim-switchboard",
+    "stars": 4,
+    "forks": 0,
+    "updated_at": "2026-07-22T11:28:04Z"
+  },
+  {
+    "name": "iot-server",
+    "description": "基于 Netty 的物联网接入服务，维护终端长连接和心跳，并把设备消息转发给后端服务。",
+    "url": "https://github.com/guohai163/iot-server",
+    "stars": 4,
+    "forks": 1,
+    "updated_at": "2025-04-14T07:38:17Z"
+  },
+  {
+    "name": "fa4j",
+    "description": "在 Java 应用中解析和验证 Forms Authentication 票据，提供核心库和 Spring Boot Starter。",
+    "url": "https://github.com/guohai163/fa4j",
+    "stars": 1,
+    "forks": 0,
+    "updated_at": "2025-05-02T14:08:15Z"
+  },
+  {
+    "name": "server-status",
+    "description": "面向 Linux、Windows Server 和 macOS 的轻量监控系统，由 Agent 采集指标，集中存储并通过 Web 展示。",
+    "url": "https://github.com/guohai163/server-status",
+    "stars": 0,
+    "forks": 0,
+    "updated_at": "2026-08-28T03:57:12Z"
+  }
+]
